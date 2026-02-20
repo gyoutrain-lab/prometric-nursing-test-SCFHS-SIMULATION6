@@ -117,6 +117,313 @@ const questions = [
   }
 },
 {
+  q: "When a nurse places a febrile infant into cold water as an emergency intervention, through which mechanism will the infant primarily lose body heat?",
+  options: [
+    { text: "Evaporation", tag: "SAFE_DELAY" },
+    { text: "Convection", tag: "NCLEX" },
+    { text: "Conduction", tag: "SCFHS" },
+    { text: "Radiation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Direct contact between the infant’s body and cold water causes heat loss through conduction.",
+    distractors: {
+      SAFE_DELAY: "Evaporation involves vaporization of liquid, not immersion.",
+      NCLEX: "Convection involves heat loss via air or fluid movement, not direct contact.",
+      STR: "Radiation involves transfer of heat without physical contact."
+    }
+  }
+},
+{
+  q: "A patient is admitted to the emergency department after sustaining abdominal injuries and a broken femur from a motor vehicle accident. The patient is pale, diaphoretic, and is not talking coherently. Vital signs upon admission are temperature 98.0 F (36.3 C), heart rate 130 beats/minute, respiratory rate 34 breaths/minute, blood pressure 50/40 mmHg. The healthcare provider suspects which type of shock?",
+  options: [
+    { text: "Hypovolemic", tag: "SCFHS" },
+    { text: "Cardiogenic", tag: "NCLEX" },
+    { text: "Distributive", tag: "SAFE_DELAY" },
+    { text: "Septic", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Massive trauma with hypotension, tachycardia, and signs of poor perfusion indicate hypovolemic shock due to blood loss.",
+    distractors: {
+      NCLEX: "Cardiogenic shock is related to pump failure, not acute trauma.",
+      SAFE_DELAY: "Distributive shock involves vasodilation rather than volume loss.",
+      STR: "Septic shock develops from infection, not acute injury."
+    }
+  }
+},
+{
+  q: "The clinic nurse is assessing jaundice in a child with hepatitis. Which anatomical area would provide the best data regarding the presence of jaundice?",
+  options: [
+    { text: "The sclera", tag: "SCFHS" },
+    { text: "The nail beds", tag: "NCLEX" },
+    { text: "The skin in the sacral area", tag: "SAFE_DELAY" },
+    { text: "The membranes in the ear canal", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Jaundice is most accurately assessed in the sclera due to high bilirubin deposition.",
+    distractors: {
+      NCLEX: "Nail beds are less reliable indicators.",
+      SAFE_DELAY: "Skin assessment may be affected by pigmentation.",
+      STR: "Ear canal membranes are not standard assessment sites."
+    }
+  }
+},
+{
+  q: "A postoperative client suddenly develops shortness of breath, chest pain, and anxiety. Oxygen saturation is 86%. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Apply high-flow oxygen via non-rebreather mask", tag: "SCFHS" },
+    { text: "Notify the healthcare provider immediately", tag: "NCLEX" },
+    { text: "Place the client in high-Fowler’s position", tag: "SAFE_DELAY" },
+    { text: "Assess lung sounds", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Suspected pulmonary embolism requires immediate oxygenation to prevent hypoxia.",
+    distractors: {
+      NCLEX: "Provider notification follows stabilization.",
+      SAFE_DELAY: "Positioning alone is insufficient.",
+      STR: "Assessment must not delay oxygen delivery."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client receiving IV potassium chloride. Which assessment finding requires IMMEDIATE intervention?",
+  options: [
+    { text: "Irregular heart rhythm on monitor", tag: "SCFHS" },
+    { text: "Pain at the IV insertion site", tag: "NCLEX" },
+    { text: "Serum potassium level of 3.4 mEq/L", tag: "SAFE_DELAY" },
+    { text: "Decreased appetite", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Potassium affects cardiac conduction; dysrhythmias indicate life-threatening toxicity.",
+    distractors: {
+      NCLEX: "IV irritation is common.",
+      SAFE_DELAY: "Mild hypokalemia is expected.",
+      STR: "Appetite changes are non-urgent."
+    }
+  }
+},
+{
+  q: "A client with diabetic ketoacidosis is receiving insulin infusion. Which outcome indicates treatment effectiveness?",
+  options: [
+    { text: "Blood glucose decreases gradually", tag: "SCFHS" },
+    { text: "Urine ketones increase", tag: "SAFE_DELAY" },
+    { text: "Serum potassium rises rapidly", tag: "NCLEX" },
+    { text: "Respiratory rate increases", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Gradual glucose reduction indicates effective insulin therapy.",
+    distractors: {
+      SAFE_DELAY: "Ketones should decrease.",
+      NCLEX: "Potassium often drops, not rises.",
+      STR: "Respiratory compensation should improve."
+    }
+  }
+},
+{
+  q: "Which client should the nurse assess FIRST?",
+  options: [
+    { text: "Client with asthma using accessory muscles", tag: "SCFHS" },
+    { text: "Client with diabetes reporting hunger", tag: "SAFE_DELAY" },
+    { text: "Client with hypertension and BP 150/90", tag: "NCLEX" },
+    { text: "Client with postoperative pain rated 6/10", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Use of accessory muscles indicates respiratory distress and impending failure.",
+    distractors: {
+      SAFE_DELAY: "Hunger is non-urgent.",
+      NCLEX: "BP is mildly elevated.",
+      STR: "Pain is important but not priority."
+    }
+  }
+},
+{
+  q: "A client receiving blood transfusion develops chills and fever. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Stop the transfusion immediately", tag: "SCFHS" },
+    { text: "Administer antipyretics", tag: "SAFE_DELAY" },
+    { text: "Slow the infusion rate", tag: "NCLEX" },
+    { text: "Document the findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs of transfusion reaction require immediate cessation to prevent harm.",
+    distractors: {
+      SAFE_DELAY: "Medication must not delay stopping transfusion.",
+      NCLEX: "Slowing does not prevent reaction.",
+      STR: "Documentation follows intervention."
+    }
+  }
+},
+{
+  q: "A nurse prepares to administer insulin glargine. Which instruction is correct?",
+  options: [
+    { text: "Do not mix with other insulins", tag: "SCFHS" },
+    { text: "Administer IV for rapid effect", tag: "STR" },
+    { text: "Give at mealtime only", tag: "SAFE_DELAY" },
+    { text: "Use for hypoglycemic emergencies", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Insulin glargine is long-acting and must not be mixed.",
+    distractors: {
+      STR: "It is not IV.",
+      SAFE_DELAY: "It is basal, not mealtime.",
+      NCLEX: "Not for emergencies."
+    }
+  }
+},
+{
+  q: "A client on opioid therapy develops shallow respirations. What is the PRIORITY medication?",
+  options: [
+    { text: "Naloxone", tag: "SCFHS" },
+    { text: "Morphine", tag: "SAFE_DELAY" },
+    { text: "Diazepam", tag: "NCLEX" },
+    { text: "Acetaminophen", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Naloxone reverses opioid-induced respiratory depression.",
+    distractors: {
+      SAFE_DELAY: "Morphine worsens depression.",
+      NCLEX: "Sedatives are contraindicated.",
+      STR: "Analgesics do not reverse overdose."
+    }
+  }
+},
+{
+  q: "Which finding indicates effective treatment of heart failure?",
+  options: [
+    { text: "Decreased peripheral edema", tag: "SCFHS" },
+    { text: "Increased heart rate", tag: "SAFE_DELAY" },
+    { text: "Weight gain of 2 kg", tag: "NCLEX" },
+    { text: "Crackles at lung bases", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Reduced edema shows improved fluid balance.",
+    distractors: {
+      SAFE_DELAY: "Tachycardia indicates stress.",
+      NCLEX: "Weight gain suggests fluid retention.",
+      STR: "Crackles indicate congestion."
+    }
+  }
+},
+{
+  q: "A confused client attempts to get out of bed repeatedly. What is the nurse’s BEST intervention?",
+  options: [
+    { text: "Implement bed alarm and close observation", tag: "SCFHS" },
+    { text: "Apply physical restraints", tag: "SAFE_DELAY" },
+    { text: "Administer sedatives", tag: "NCLEX" },
+    { text: "Leave the room door closed", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Least restrictive safety measures are required.",
+    distractors: {
+      SAFE_DELAY: "Restraints are last resort.",
+      NCLEX: "Sedation increases fall risk.",
+      STR: "Isolation reduces monitoring."
+    }
+  }
+},
+{
+  q: "Which laboratory value requires immediate reporting?",
+  options: [
+    { text: "Serum sodium 118 mEq/L", tag: "SCFHS" },
+    { text: "Hemoglobin 11 g/dL", tag: "SAFE_DELAY" },
+    { text: "WBC 9,000/mm³", tag: "NCLEX" },
+    { text: "Platelets 200,000/mm³", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe hyponatremia can cause seizures and coma.",
+    distractors: {
+      SAFE_DELAY: "Mild anemia is expected.",
+      NCLEX: "Normal WBC.",
+      STR: "Normal platelets."
+    }
+  }
+},
+{
+  q: "A nurse from another department calls requesting patient information. What is the nurse’s MOST appropriate action?",
+  options: [
+    { text: "Give the patient data as requested", tag: "STR" },
+    { text: "Tell the caller to wait until work is finished", tag: "SAFE_DELAY" },
+    { text: "Obtain consent from the patient before sharing", tag: "NCLEX" },
+    { text: "State that the information is confidential and the patient must provide it personally", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Patient information is confidential and must not be shared without proper authorization.",
+    distractors: {
+      STR: "Sharing information violates confidentiality.",
+      SAFE_DELAY: "Delaying does not address confidentiality.",
+      NCLEX: "Consent does not override institutional policy and verification requirements."
+    }
+  }
+},
+{
+  q: "A nurse assigned to triage in the emergency department must determine which client requires FIRST priority.",
+  options: [
+    { text: "Patient with pulsating in the abdomen", tag: "SCFHS" },
+    { text: "Patient with pneumonia", tag: "NCLEX" },
+    { text: "Patient with sore throat", tag: "SAFE_DELAY" },
+    { text: "Patient with minor lacerations", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A pulsating abdominal mass suggests a possible abdominal aortic aneurysm, a life-threatening condition.",
+    distractors: {
+      NCLEX: "Pneumonia is serious but not immediately life-threatening in triage.",
+      SAFE_DELAY: "Sore throat is non-urgent.",
+      STR: "Minor lacerations are low priority."
+    }
+  }
+},
+{
+  q: "A physician orders 600 mL of IV fluid to infuse over 10 hours using tubing with a drop factor of 15 gtt/mL. How many drops per minute should the nurse regulate?",
+  options: [
+    { text: "15", tag: "SAFE_DELAY" },
+    { text: "20", tag: "SCFHS" },
+    { text: "25", tag: "NCLEX" },
+    { text: "30", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "600 mL over 600 minutes equals 1 mL/min; multiplied by 15 gtt/mL equals 20 gtt/min.",
+    distractors: {
+      SAFE_DELAY: "Incorrect calculation.",
+      NCLEX: "Incorrect calculation.",
+      STR: "Incorrect calculation."
+    }
+  }
+},
+{
+  q: "A female patient reports seeing IV tubing as a snake. How should the nurse classify this perceptual disturbance?",
+  options: [
+    { text: "Illusion", tag: "SCFHS" },
+    { text: "Delusion", tag: "NCLEX" },
+    { text: "Hallucination", tag: "SAFE_DELAY" },
+    { text: "Obsessive-compulsive disorder", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "An illusion is a misinterpretation of a real external stimulus.",
+    distractors: {
+      NCLEX: "Delusions are false fixed beliefs.",
+      SAFE_DELAY: "Hallucinations occur without an external stimulus.",
+      STR: "OCD is unrelated to perceptual disturbances."
+    }
+  }
+},
+
+{
   q: "A nurse from another department called your department and asked for patient details",
   options: [
     { text: "give him the patient data", tag: "STR" },
@@ -1175,6 +1482,186 @@ const questions = [
       SAFE_DELAY: "Massage damages tissue.",
       NCLEX: "Immobility increases risk.",
       STR: "Protein supports skin integrity."
+    }
+  }
+},
+{
+  q: "A client with chronic obstructive pulmonary disease (COPD) is receiving oxygen via nasal cannula at 4 L/min. Which finding indicates the oxygen flow rate should be reassessed?",
+  options: [
+    { text: "Decreased respiratory drive", tag: "SCFHS" },
+    { text: "Oxygen saturation of 92%", tag: "SAFE_DELAY" },
+    { text: "Pink nail beds", tag: "NCLEX" },
+    { text: "Respiratory rate of 18/min", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "High oxygen flow can suppress respiratory drive in clients with COPD.",
+    distractors: {
+      SAFE_DELAY: "This saturation is acceptable.",
+      NCLEX: "Pink nail beds indicate adequate perfusion.",
+      STR: "Normal respiratory rate."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client with increased intracranial pressure (ICP). Which intervention is MOST appropriate?",
+  options: [
+    { text: "Maintain the head of bed at 30 degrees", tag: "SCFHS" },
+    { text: "Encourage coughing and deep breathing", tag: "SAFE_DELAY" },
+    { text: "Position the client flat", tag: "NCLEX" },
+    { text: "Perform frequent suctioning", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Head elevation promotes venous drainage and reduces ICP.",
+    distractors: {
+      SAFE_DELAY: "Coughing increases ICP.",
+      NCLEX: "Flat positioning worsens ICP.",
+      STR: "Suctioning raises ICP."
+    }
+  }
+},
+{
+  q: "A client reports chest pain radiating to the left arm. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer oxygen", tag: "SCFHS" },
+    { text: "Obtain a detailed pain history", tag: "SAFE_DELAY" },
+    { text: "Prepare the client for discharge", tag: "NCLEX" },
+    { text: "Document the pain description", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Suspected myocardial ischemia requires immediate oxygenation.",
+    distractors: {
+      SAFE_DELAY: "Assessment must not delay intervention.",
+      NCLEX: "Discharge is unsafe.",
+      STR: "Documentation follows stabilization."
+    }
+  }
+},
+{
+  q: "Which action by the nurse best prevents catheter-associated urinary tract infection (CAUTI)?",
+  options: [
+    { text: "Remove the catheter as soon as possible", tag: "SCFHS" },
+    { text: "Irrigate the catheter daily", tag: "SAFE_DELAY" },
+    { text: "Disconnect tubing to obtain specimens", tag: "NCLEX" },
+    { text: "Clean the drainage bag weekly", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early removal is the most effective CAUTI prevention strategy.",
+    distractors: {
+      SAFE_DELAY: "Routine irrigation increases infection risk.",
+      NCLEX: "Breaking the system increases contamination.",
+      STR: "Cleaning frequency is insufficient."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy has a neutrophil count of 900/mm³. Which intervention is MOST appropriate?",
+  options: [
+    { text: "Initiate neutropenic precautions", tag: "SCFHS" },
+    { text: "Encourage fresh fruits and vegetables", tag: "SAFE_DELAY" },
+    { text: "Assign a roommate", tag: "NCLEX" },
+    { text: "Discontinue chemotherapy", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Neutropenia increases infection risk requiring protective measures.",
+    distractors: {
+      SAFE_DELAY: "Raw foods increase infection risk.",
+      NCLEX: "Private room is preferred.",
+      STR: "Medication changes require provider order."
+    }
+  }
+},
+{
+  q: "Which finding suggests hypoglycemia in a client with diabetes?",
+  options: [
+    { text: "Diaphoresis and tremors", tag: "SCFHS" },
+    { text: "Polyuria", tag: "SAFE_DELAY" },
+    { text: "Dry skin", tag: "NCLEX" },
+    { text: "Fruity breath odor", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Adrenergic symptoms indicate low blood glucose.",
+    distractors: {
+      SAFE_DELAY: "Polyuria suggests hyperglycemia.",
+      NCLEX: "Dry skin is dehydration.",
+      STR: "Fruity odor indicates ketoacidosis."
+    }
+  }
+},
+{
+  q: "A client suddenly becomes aphasic and has right-sided weakness. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Activate the stroke protocol", tag: "SCFHS" },
+    { text: "Check blood glucose level", tag: "SAFE_DELAY" },
+    { text: "Position the client comfortably", tag: "NCLEX" },
+    { text: "Notify family members", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Time-sensitive interventions are critical in suspected stroke.",
+    distractors: {
+      SAFE_DELAY: "Glucose check follows protocol activation.",
+      NCLEX: "Comfort does not address urgency.",
+      STR: "Family notification is secondary."
+    }
+  }
+},
+{
+  q: "Which nursing action is appropriate when administering enteral feedings?",
+  options: [
+    { text: "Verify tube placement before feeding", tag: "SCFHS" },
+    { text: "Place client supine during feeding", tag: "SAFE_DELAY" },
+    { text: "Flush tube with air", tag: "NCLEX" },
+    { text: "Hold feeding without assessment", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Incorrect tube placement can cause aspiration.",
+    distractors: {
+      SAFE_DELAY: "Supine increases aspiration risk.",
+      NCLEX: "Air is not used for flushing.",
+      STR: "Assessment is required."
+    }
+  }
+},
+{
+  q: "A client reports sudden severe headache described as ‘the worst ever.’ What does the nurse suspect?",
+  options: [
+    { text: "Subarachnoid hemorrhage", tag: "SCFHS" },
+    { text: "Tension headache", tag: "SAFE_DELAY" },
+    { text: "Migraine", tag: "NCLEX" },
+    { text: "Sinus congestion", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Thunderclap headache is classic for subarachnoid hemorrhage.",
+    distractors: {
+      SAFE_DELAY: "Tension headaches are gradual.",
+      NCLEX: "Migraines have prodrome.",
+      STR: "Sinus pain is localized."
+    }
+  }
+},
+{
+  q: "Which intervention best reduces the risk of pressure injury?",
+  options: [
+    { text: "Reposition the client every 2 hours", tag: "SCFHS" },
+    { text: "Massage bony prominences", tag: "SAFE_DELAY" },
+    { text: "Use donut-shaped cushions", tag: "NCLEX" },
+    { text: "Limit fluid intake", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Regular repositioning relieves pressure and restores circulation.",
+    distractors: {
+      SAFE_DELAY: "Massage can damage tissue.",
+      NCLEX: "Donut cushions increase pressure.",
+      STR: "Hydration is essential."
     }
   }
 },
