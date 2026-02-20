@@ -441,21 +441,186 @@ const questions = [
   }
 },
 {
-  q: "Which nursing intervention BEST promotes sleep in hospitalized clients?",
+  q: "Which of the following instruction should be given to the parents about colostomy care?",
   options: [
-    { text: "Cluster nursing care activities", tag: "SCFHS" },
-    { text: "Keep lights on overnight", tag: "SAFE_DELAY" },
-    { text: "Perform frequent vital sign checks", tag: "NCLEX" },
-    { text: "Encourage daytime napping", tag: "STR" }
+    { text: "Avoid tight diapers around the infant abdomen", tag: "SCFHS" },
+    { text: "Use baby powder after stoma cleaning", tag: "SAFE_DELAY" },
+    { text: "Empty the pouch when it is completely full", tag: "NCLEX" },
+    { text: "Use baby wipes to clean the skin around the stoma", tag: "STR" }
   ],
   correctTag: "SCFHS",
   rationale: {
-    correct: "Clustering care minimizes sleep interruptions.",
+    correct: "Tight diapers increase pressure and skin breakdown around the stoma.",
     distractors: {
-      SAFE_DELAY: "Lighting disrupts sleep.",
-      NCLEX: "Frequent checks interrupt rest.",
-      STR: "Daytime napping affects nighttime sleep."
+      SAFE_DELAY: "Powder can irritate and interfere with adhesion.",
+      NCLEX: "Pouch should be emptied before it becomes full.",
+      STR: "Baby wipes may contain irritants."
     }
+  }
+},
+{
+  q: "A 23-year-old gravid 1, para 0 mother is presented to the Antenatal clinic. Which information regarding fetal circulation should be stressed?",
+  options: [
+    { text: "Two umbilical arteries and one umbilical vein", tag: "SCFHS" },
+    { text: "One umbilical artery and one umbilical vein", tag: "SAFE_DELAY" },
+    { text: "One umbilical artery and two umbilical veins", tag: "NCLEX" },
+    { text: "Two umbilical arteries and two umbilical veins", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Normal fetal circulation includes two arteries and one vein.",
+    distractors: {
+      SAFE_DELAY: "This is anatomically incorrect.",
+      NCLEX: "Only one umbilical vein exists.",
+      STR: "There are not two umbilical veins."
+    }
+  }
+},
+{
+  q: "During a meningitis outbreak, non-immune staff were given immunoglobulin to prevent infection. What type of immunity develops?",
+  options: [
+    { text: "Passive", tag: "SCFHS" },
+    { text: "Active", tag: "SAFE_DELAY" },
+    { text: "Natural", tag: "NCLEX" },
+    { text: "Long-term", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immunoglobulin provides immediate passive immunity.",
+    distractors: {
+      SAFE_DELAY: "Active immunity requires antigen exposure.",
+      NCLEX: "Natural immunity occurs through infection.",
+      STR: "Passive immunity is temporary."
+    }
+  }
+},
+{
+  q: "Immunization is considered an example of which level of prevention?",
+  options: [
+    { text: "Primary prevention", tag: "SCFHS" },
+    { text: "Secondary prevention", tag: "SAFE_DELAY" },
+    { text: "Tertiary prevention", tag: "NCLEX" },
+    { text: "Treatment", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immunization prevents disease before it occurs.",
+    distractors: {
+      SAFE_DELAY: "Secondary focuses on early detection.",
+      NCLEX: "Tertiary reduces complications.",
+      STR: "Treatment manages existing disease."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client who states, “I don’t want to talk with you because you’re only the nurse.” Which response is most appropriate?",
+  options: [
+    { text: "So then, you would prefer to speak with your primary health care provider?", tag: "SCFHS" },
+    { text: "I’m saddened by the way you dismissed me", tag: "SAFE_DELAY" },
+    { text: "Your provider directs me in your care", tag: "NCLEX" },
+    { text: "I understand, I will leave now", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "This response is respectful and therapeutic.",
+    distractors: {
+      SAFE_DELAY: "This expresses personal feelings.",
+      NCLEX: "This may sound defensive.",
+      STR: "Abandonment is not appropriate."
+    }
+  }
+},
+{
+  q: "According to pressure ulcer staging, skin with blisters, shallow open ulcers, and abrasions is classified as which stage?",
+  options: [
+    { text: "Stage 2", tag: "SCFHS" },
+    { text: "Stage 1", tag: "SAFE_DELAY" },
+    { text: "Stage 3", tag: "NCLEX" },
+    { text: "Stage 4", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stage 2 involves partial-thickness skin loss.",
+    distractors: {
+      SAFE_DELAY: "Stage 1 has intact skin.",
+      NCLEX: "Stage 3 extends into subcutaneous tissue.",
+      STR: "Stage 4 exposes muscle or bone."
+    }
+  }
+},
+{
+  q: "A pulse oximeter probe attached to the forefinger is not reading. What is the nurse’s best action?",
+  options: [
+    { text: "Change the location of the pulse oximeter", tag: "SCFHS" },
+    { text: "Assume oxygen saturation is normal", tag: "SAFE_DELAY" },
+    { text: "Maintain position and recheck later", tag: "NCLEX" },
+    { text: "Remove oxygen therapy", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Poor perfusion may affect readings; repositioning helps.",
+    distractors: {
+      SAFE_DELAY: "Never assume normal values.",
+      NCLEX: "Delay risks missing hypoxia.",
+      STR: "Oxygen should not be stopped."
+    }
+  }
+},
+{
+  q: "Which nursing intervention is appropriate during the pre-operative phase?",
+  options: [
+    { text: "Verify patient understanding of informed consent", tag: "SCFHS" },
+    { text: "Obtain informed consent", tag: "SAFE_DELAY" },
+    { text: "Encourage patient to sign consent", tag: "NCLEX" },
+    { text: "Explain surgery without provider involvement", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The nurse verifies understanding, not obtains consent.",
+    distractors: {
+      SAFE_DELAY: "Only providers obtain consent.",
+      NCLEX: "Forcing signature is inappropriate.",
+      STR: "Provider explains surgery details."
+    }
+  }
+},
+{
+  q: "A patient is in the triage area. What is the FIRST subjective data the nurse should obtain?",
+  options: [
+    { text: "Chief complaint", tag: "SCFHS" },
+    { text: "Family history", tag: "SAFE_DELAY" },
+    { text: "Medical history", tag: "NCLEX" },
+    { text: "Pain scale history", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Chief complaint determines triage priority.",
+    distractors: {
+      SAFE_DELAY: "Family history is not immediate.",
+      NCLEX: "Full history follows stabilization.",
+      STR: "Pain assessment follows complaint."
+    }
+  }
+},
+{
+  q: "On the fourth post-operative day after cesarean section, a positive Homans’ sign indicates pain in which area?",
+  options: [
+    { text: "Calf", tag: "SCFHS" },
+    { text: "Heel", tag: "SAFE_DELAY" },
+    { text: "Thigh", tag: "NCLEX" },
+    { text: "Foot", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Calf pain suggests deep vein thrombosis.",
+    distractors: {
+      SAFE_DELAY: "Heel pain is unrelated.",
+      NCLEX: "Thigh pain is less specific.",
+      STR: "Foot pain is not indicative."
+    }
+  }
+},
+
 ];
 
 // ================= ENGINE =================
