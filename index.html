@@ -99,56 +99,182 @@ input, button {
 // ================= QUESTIONS =================
 const questions = [
 {
-  q: "A patient states, “I plan to kill myself tonight,” and has access to a firearm. What is the nurse’s PRIORITY action?",
+  q: "When the nurse put the baby with high temperature in to cold water the baby will lose temperature through?",
   options: [
-    { text: "Ensure immediate safety and initiate involuntary hold procedures", tag: "SCFHS" },
-    { text: "Respect the patient’s confidentiality", tag: "SAFE_DELAY" },
-    { text: "Encourage the patient to reconsider", tag: "NCLEX" },
-    { text: "Document the statement and continue assessment", tag: "STR" }
+    { text: "Evaporation", tag: "NCLEX" },
+    { text: "Convection", tag: "SCFHS" },
+    { text: "Conduction", tag: "SAFE_DELAY" },
+    { text: "Radiation", tag: "STR" }
   ],
   correctTag: "SCFHS",
   rationale: {
-    correct: "Expressed intent with means constitutes imminent danger requiring immediate protective action.",
+    correct: "Heat loss occurs by convection when the body is exposed to moving cooler fluid such as water.",
     distractors: {
-      SAFE_DELAY: "Confidentiality does not apply when life is at risk.",
-      NCLEX: "Therapeutic communication cannot replace safety measures.",
-      STR: "Documentation alone is insufficient."
+      NCLEX: "Evaporation requires liquid to gas conversion such as sweating.",
+      SAFE_DELAY: "Conduction requires direct contact with a solid surface.",
+      STR: "Radiation involves transfer of heat without contact."
     }
   }
 },
 {
-  q: "A patient with acute psychosis is pacing and threatening staff but has not attempted harm. What is the nurse’s FIRST intervention?",
+  q: "A nurse from another department called your department and asked for patient details",
   options: [
-    { text: "Use verbal de-escalation techniques", tag: "SCFHS" },
-    { text: "Apply physical restraints immediately", tag: "SAFE_DELAY" },
-    { text: "Administer PRN antipsychotic medication", tag: "NCLEX" },
-    { text: "Call security to restrain the patient", tag: "STR" }
+    { text: "give him the patient data", tag: "STR" },
+    { text: "tell him to wait until you finish your work", tag: "SAFE_DELAY" },
+    { text: "take a consent from the patient to share the data", tag: "SCFHS" },
+    { text: "the data is confidential; the department must ask the patient himself for the data", tag: "NCLEX" }
   ],
   correctTag: "SCFHS",
   rationale: {
-    correct: "Least-restrictive interventions must be attempted before restraints or medications.",
+    correct: "Patient consent is required before sharing confidential health information.",
     distractors: {
-      SAFE_DELAY: "Restraints are last-resort measures.",
-      NCLEX: "Medication without de-escalation may violate rights.",
-      STR: "Security escalates the situation prematurely."
+      STR: "Sharing data without consent violates confidentiality.",
+      SAFE_DELAY: "Delaying does not address confidentiality.",
+      NCLEX: "Departments may communicate with consent, not refusal."
     }
   }
 },
 {
-  q: "A patient expresses passive death wishes but denies intent or plan. What is the nurse’s BEST action?",
+  q: "The nurse employed in an emergency department is assigned to triage clients coming to the emergency department for treatment on the evening shift. The nurse should assign priority to which client?",
   options: [
-    { text: "Conduct further suicide risk assessment", tag: "SCFHS" },
-    { text: "Initiate involuntary hold immediately", tag: "SAFE_DELAY" },
-    { text: "Dismiss the statement as attention-seeking", tag: "NCLEX" },
-    { text: "Document and end the conversation", tag: "STR" }
+    { text: "Patient with pulsating in the abdomen", tag: "SCFHS" },
+    { text: "Patient with pneumonia", tag: "NCLEX" },
+    { text: "Patient with sore throat", tag: "SAFE_DELAY" },
+    { text: "Patient with minor lacerations", tag: "STR" }
   ],
   correctTag: "SCFHS",
   rationale: {
-    correct: "Further assessment is required when risk is unclear.",
+    correct: "A pulsating abdominal mass suggests possible abdominal aortic aneurysm and is life-threatening.",
     distractors: {
-      SAFE_DELAY: "Hold requires imminent danger.",
-      NCLEX: "Dismissal risks missing escalation.",
-      STR: "Ending assessment is unsafe."
+      NCLEX: "Pneumonia is serious but not immediately fatal.",
+      SAFE_DELAY: "Sore throat is non-urgent.",
+      STR: "Minor lacerations are lowest priority."
+    }
+  }
+},
+{
+  q: "Doctor order 600ml over 10 hours how many drop per minute should the nurse adjust drop factor is 15?",
+  options: [
+    { text: "15", tag: "SAFE_DELAY" },
+    { text: "20", tag: "SCFHS" },
+    { text: "25", tag: "NCLEX" },
+    { text: "30", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "600 mL × 15 gtt ÷ 600 minutes = 15 gtt/min.",
+    distractors: {
+      SAFE_DELAY: "Incorrect calculation.",
+      NCLEX: "Incorrect calculation.",
+      STR: "Incorrect calculation."
+    }
+  }
+},
+{
+  q: "Female patient saw the IV tubing as a snake the nurse consider this reaction as?",
+  options: [
+    { text: "Illusion", tag: "SCFHS" },
+    { text: "Delusion", tag: "NCLEX" },
+    { text: "Hallucination", tag: "SAFE_DELAY" },
+    { text: "OCD", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Illusion is a misinterpretation of a real external stimulus.",
+    distractors: {
+      NCLEX: "Delusion is a fixed false belief.",
+      SAFE_DELAY: "Hallucination occurs without an external stimulus.",
+      STR: "OCD is unrelated."
+    }
+  }
+},
+{
+  q: "A Female patient will do the breast implant surgery and she tell the nurse not to tell her family about the surgery. What is the nature of this action?",
+  options: [
+    { text: "confidentiality", tag: "SCFHS" },
+    { text: "ethical dilemma", tag: "NCLEX" },
+    { text: "illegal nursing practice", tag: "SAFE_DELAY" },
+    { text: "medico-legal practice", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respecting patient privacy is a confidentiality obligation.",
+    distractors: {
+      NCLEX: "There is no ethical conflict present.",
+      SAFE_DELAY: "The action is not illegal.",
+      STR: "No legal reporting requirement exists."
+    }
+  }
+},
+{
+  q: "A nurse develops a plan of care for a child at risk for tonic-clonic seizures. In the plan of care, the nurse identifies seizure precautions and documents that which item(s) need to be placed at the child's bedside?",
+  options: [
+    { text: "Emergency cart", tag: "STR" },
+    { text: "Tracheotomy set", tag: "SAFE_DELAY" },
+    { text: "Padded tongue blade", tag: "NCLEX" },
+    { text: "Suctioning equipment and oxygen", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway management equipment is essential during seizures.",
+    distractors: {
+      STR: "Not required at bedside.",
+      SAFE_DELAY: "Tracheotomy set is unnecessary.",
+      NCLEX: "Tongue blades are unsafe during seizures."
+    }
+  }
+},
+{
+  q: "The nurse reviews wound culture results and learns that an assigned client has methicillin-resistant Staphylococcus aureus (MRSA) in a wound bed. Which type of transmission-based precautions should the nurse implement for this client?",
+  options: [
+    { text: "Contact precautions", tag: "SCFHS" },
+    { text: "Enteric precautions", tag: "SAFE_DELAY" },
+    { text: "Droplet precautions", tag: "NCLEX" },
+    { text: "Airborne precautions", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "MRSA is transmitted by direct contact.",
+    distractors: {
+      SAFE_DELAY: "Enteric applies to GI pathogens.",
+      NCLEX: "Droplet is respiratory.",
+      STR: "Airborne is not indicated."
+    }
+  }
+},
+{
+  q: "Which of the following factors is the underlying cause of dystocia?",
+  options: [
+    { text: "Nutritional", tag: "STR" },
+    { text: "Mechanical", tag: "SCFHS" },
+    { text: "Environmental", tag: "SAFE_DELAY" },
+    { text: "Medical", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Mechanical problems such as fetal position commonly cause dystocia.",
+    distractors: {
+      STR: "Nutrition is not primary.",
+      SAFE_DELAY: "Environment is not causative.",
+      NCLEX: "Medical factors are secondary."
+    }
+  }
+},
+{
+  q: "An older adult client with a history of blood clots is in the emergency room with suspected deep vein thrombosis (DVT) of the left leg. The nurse starts IV heparin as ordered. Which of the following is LEAST likely to be included in the care plan?",
+  options: [
+    { text: "Ambulation as tolerated", tag: "SCFHS" },
+    { text: "Warm, moist soaks applied to the affected area", tag: "NCLEX" },
+    { text: "Analgesics as ordered", tag: "SAFE_DELAY" },
+    { text: "Anti-embolism stockings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early ambulation increases risk of embolization in acute DVT.",
+    distractors: {
+      NCLEX: "Warm soaks may relieve pain.",
+      SAFE_DELAY: "Analgesics are appropriate.",
+      STR: "Stockings help prevent venous stasis."
     }
   }
 }
