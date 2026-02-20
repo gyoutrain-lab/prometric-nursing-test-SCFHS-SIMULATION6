@@ -77,7 +77,7 @@ input, button {
 <!-- EXAM SCREEN -->
 <div id="examScreen" class="hidden">
   <h2 id="qCounter"></h2>
-  <div id="timer">Time Remaining: 20:00</div>
+  <div id="timer">Time Remaining: 120:00</div>
   <p id="questionText"></p>
   <div id="options"></div>
 
@@ -279,6 +279,1086 @@ const questions = [
   }
 },
 {
+  q: "When the nurse put the baby with high temperature in to cold water the baby will lose temperature through?",
+  options: [
+    { text: "Evaporation", tag: "NCLEX" },
+    { text: "Convection", tag: "SCFHS" },
+    { text: "Conduction", tag: "SAFE_DELAY" },
+    { text: "Radiation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Heat loss occurs by convection when the body is exposed to moving cooler fluid such as water.",
+    distractors: {
+      NCLEX: "Evaporation requires liquid to gas conversion such as sweating.",
+      SAFE_DELAY: "Conduction requires direct contact with a solid surface.",
+      STR: "Radiation involves transfer of heat without contact."
+    }
+  }
+},
+{
+  q: "A nurse from another department called your department and asked for patient details",
+  options: [
+    { text: "give him the patient data", tag: "STR" },
+    { text: "tell him to wait until you finish your work", tag: "SAFE_DELAY" },
+    { text: "take a consent from the patient to share the data", tag: "SCFHS" },
+    { text: "the data is confidential; the department must ask the patient himself for the data", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Patient consent is required before sharing confidential health information.",
+    distractors: {
+      STR: "Sharing data without consent violates confidentiality.",
+      SAFE_DELAY: "Delaying does not address confidentiality.",
+      NCLEX: "Departments may communicate with consent, not refusal."
+    }
+  }
+},
+{
+  q: "The nurse employed in an emergency department is assigned to triage clients coming to the emergency department for treatment on the evening shift. The nurse should assign priority to which client?",
+  options: [
+    { text: "Patient with pulsating in the abdomen", tag: "SCFHS" },
+    { text: "Patient with pneumonia", tag: "NCLEX" },
+    { text: "Patient with sore throat", tag: "SAFE_DELAY" },
+    { text: "Patient with minor lacerations", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "A pulsating abdominal mass suggests possible abdominal aortic aneurysm and is life-threatening.",
+    distractors: {
+      NCLEX: "Pneumonia is serious but not immediately fatal.",
+      SAFE_DELAY: "Sore throat is non-urgent.",
+      STR: "Minor lacerations are lowest priority."
+    }
+  }
+},
+{
+  q: "Doctor order 600ml over 10 hours how many drop per minute should the nurse adjust drop factor is 15?",
+  options: [
+    { text: "15", tag: "SAFE_DELAY" },
+    { text: "20", tag: "SCFHS" },
+    { text: "25", tag: "NCLEX" },
+    { text: "30", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "600 mL × 15 gtt ÷ 600 minutes = 15 gtt/min.",
+    distractors: {
+      SAFE_DELAY: "Incorrect calculation.",
+      NCLEX: "Incorrect calculation.",
+      STR: "Incorrect calculation."
+    }
+  }
+},
+{
+  q: "Female patient saw the IV tubing as a snake the nurse consider this reaction as?",
+  options: [
+    { text: "Illusion", tag: "SCFHS" },
+    { text: "Delusion", tag: "NCLEX" },
+    { text: "Hallucination", tag: "SAFE_DELAY" },
+    { text: "OCD", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Illusion is a misinterpretation of a real external stimulus.",
+    distractors: {
+      NCLEX: "Delusion is a fixed false belief.",
+      SAFE_DELAY: "Hallucination occurs without an external stimulus.",
+      STR: "OCD is unrelated."
+    }
+  }
+},
+{
+  q: "A Female patient will do the breast implant surgery and she tell the nurse not to tell her family about the surgery. What is the nature of this action?",
+  options: [
+    { text: "confidentiality", tag: "SCFHS" },
+    { text: "ethical dilemma", tag: "NCLEX" },
+    { text: "illegal nursing practice", tag: "SAFE_DELAY" },
+    { text: "medico-legal practice", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respecting patient privacy is a confidentiality obligation.",
+    distractors: {
+      NCLEX: "There is no ethical conflict present.",
+      SAFE_DELAY: "The action is not illegal.",
+      STR: "No legal reporting requirement exists."
+    }
+  }
+},
+{
+  q: "A nurse develops a plan of care for a child at risk for tonic-clonic seizures. In the plan of care, the nurse identifies seizure precautions and documents that which item(s) need to be placed at the child's bedside?",
+  options: [
+    { text: "Emergency cart", tag: "STR" },
+    { text: "Tracheotomy set", tag: "SAFE_DELAY" },
+    { text: "Padded tongue blade", tag: "NCLEX" },
+    { text: "Suctioning equipment and oxygen", tag: "SCFHS" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway management equipment is essential during seizures.",
+    distractors: {
+      STR: "Not required at bedside.",
+      SAFE_DELAY: "Tracheotomy set is unnecessary.",
+      NCLEX: "Tongue blades are unsafe during seizures."
+    }
+  }
+},
+{
+  q: "The nurse reviews wound culture results and learns that an assigned client has methicillin-resistant Staphylococcus aureus (MRSA) in a wound bed. Which type of transmission-based precautions should the nurse implement for this client?",
+  options: [
+    { text: "Contact precautions", tag: "SCFHS" },
+    { text: "Enteric precautions", tag: "SAFE_DELAY" },
+    { text: "Droplet precautions", tag: "NCLEX" },
+    { text: "Airborne precautions", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "MRSA is transmitted by direct contact.",
+    distractors: {
+      SAFE_DELAY: "Enteric applies to GI pathogens.",
+      NCLEX: "Droplet is respiratory.",
+      STR: "Airborne is not indicated."
+    }
+  }
+},
+{
+  q: "Which of the following factors is the underlying cause of dystocia?",
+  options: [
+    { text: "Nutritional", tag: "STR" },
+    { text: "Mechanical", tag: "SCFHS" },
+    { text: "Environmental", tag: "SAFE_DELAY" },
+    { text: "Medical", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Mechanical problems such as fetal position commonly cause dystocia.",
+    distractors: {
+      STR: "Nutrition is not primary.",
+      SAFE_DELAY: "Environment is not causative.",
+      NCLEX: "Medical factors are secondary."
+    }
+  }
+},
+{
+  q: "An older adult client with a history of blood clots is in the emergency room with suspected deep vein thrombosis (DVT) of the left leg. The nurse starts IV heparin as ordered. Which of the following is LEAST likely to be included in the care plan?",
+  options: [
+    { text: "Ambulation as tolerated", tag: "SCFHS" },
+    { text: "Warm, moist soaks applied to the affected area", tag: "NCLEX" },
+    { text: "Analgesics as ordered", tag: "SAFE_DELAY" },
+    { text: "Anti-embolism stockings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early ambulation increases risk of embolization in acute DVT.",
+    distractors: {
+      NCLEX: "Warm soaks may relieve pain.",
+      SAFE_DELAY: "Analgesics are appropriate.",
+      STR: "Stockings help prevent venous stasis."
+    }
+  }
+},
+{
+  q: "A client with tuberculosis is admitted to the medical unit. Which infection-control measure is MOST appropriate?",
+  options: [
+    { text: "Negative-pressure room", tag: "SCFHS" },
+    { text: "Contact isolation", tag: "NCLEX" },
+    { text: "Private room only", tag: "SAFE_DELAY" },
+    { text: "Droplet precautions", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Tuberculosis is an airborne disease requiring a negative-pressure room.",
+    distractors: {
+      NCLEX: "Contact precautions are insufficient.",
+      SAFE_DELAY: "Private room alone does not prevent airborne spread.",
+      STR: "Droplet precautions are inadequate."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client receiving a blood transfusion. Which finding requires IMMEDIATE action?",
+  options: [
+    { text: "Chills and fever", tag: "SCFHS" },
+    { text: "Mild flushing", tag: "SAFE_DELAY" },
+    { text: "Headache", tag: "NCLEX" },
+    { text: "Nausea", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Chills and fever indicate an acute transfusion reaction.",
+    distractors: {
+      SAFE_DELAY: "Flushing may occur without reaction.",
+      NCLEX: "Headache is nonspecific.",
+      STR: "Nausea alone is not critical."
+    }
+  }
+},
+{
+  q: "A postoperative client suddenly develops shortness of breath and chest pain. Which complication should the nurse SUSPECT first?",
+  options: [
+    { text: "Pulmonary embolism", tag: "SCFHS" },
+    { text: "Pneumonia", tag: "NCLEX" },
+    { text: "Atelectasis", tag: "SAFE_DELAY" },
+    { text: "Myocardial infarction", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden dyspnea and chest pain are classic signs of pulmonary embolism.",
+    distractors: {
+      NCLEX: "Pneumonia develops gradually.",
+      SAFE_DELAY: "Atelectasis causes mild hypoxia.",
+      STR: "MI presents differently."
+    }
+  }
+},
+{
+  q: "Which action BEST prevents catheter-associated urinary tract infections?",
+  options: [
+    { text: "Removing the catheter as soon as possible", tag: "SCFHS" },
+    { text: "Irrigating the catheter daily", tag: "SAFE_DELAY" },
+    { text: "Using antiseptic solution for cleansing", tag: "NCLEX" },
+    { text: "Changing drainage bags frequently", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early removal is the most effective prevention strategy.",
+    distractors: {
+      SAFE_DELAY: "Routine irrigation increases infection risk.",
+      NCLEX: "Soap and water are sufficient.",
+      STR: "Frequent bag changes are unnecessary."
+    }
+  }
+},
+{
+  q: "A client with diabetes reports shakiness, sweating, and confusion. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Check blood glucose level", tag: "SCFHS" },
+    { text: "Administer insulin", tag: "NCLEX" },
+    { text: "Encourage exercise", tag: "SAFE_DELAY" },
+    { text: "Notify the physician", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptoms suggest hypoglycemia and require immediate glucose assessment.",
+    distractors: {
+      NCLEX: "Insulin would worsen hypoglycemia.",
+      SAFE_DELAY: "Exercise lowers glucose further.",
+      STR: "Assessment comes before notification."
+    }
+  }
+},
+{
+  q: "The nurse is teaching a client about inhaler use. Which instruction is MOST important?",
+  options: [
+    { text: "Rinse the mouth after use", tag: "SCFHS" },
+    { text: "Use inhaler before meals", tag: "STR" },
+    { text: "Store inhaler in refrigerator", tag: "SAFE_DELAY" },
+    { text: "Exhale rapidly after inhalation", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rinsing prevents oral candidiasis with inhaled medications.",
+    distractors: {
+      STR: "Timing with meals is not required.",
+      SAFE_DELAY: "Room temperature storage is adequate.",
+      NCLEX: "Slow exhalation is recommended."
+    }
+  }
+},
+{
+  q: "Which assessment finding is EXPECTED in a client with left-sided heart failure?",
+  options: [
+    { text: "Crackles in the lungs", tag: "SCFHS" },
+    { text: "Peripheral edema", tag: "NCLEX" },
+    { text: "Ascites", tag: "SAFE_DELAY" },
+    { text: "Jugular vein distention", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Left-sided failure causes pulmonary congestion.",
+    distractors: {
+      NCLEX: "Peripheral edema is right-sided.",
+      SAFE_DELAY: "Ascites reflects systemic congestion.",
+      STR: "JVD is right-sided."
+    }
+  }
+},
+{
+  q: "A client receiving opioids is at risk for which PRIORITY complication?",
+  options: [
+    { text: "Respiratory depression", tag: "SCFHS" },
+    { text: "Constipation", tag: "SAFE_DELAY" },
+    { text: "Urinary retention", tag: "NCLEX" },
+    { text: "Nausea", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respiratory depression is the most life-threatening effect.",
+    distractors: {
+      SAFE_DELAY: "Constipation is common but not urgent.",
+      NCLEX: "Urinary retention is secondary.",
+      STR: "Nausea is manageable."
+    }
+  }
+},
+{
+  q: "Which intervention is MOST appropriate for a client experiencing hypovolemic shock?",
+  options: [
+    { text: "Rapid IV fluid replacement", tag: "SCFHS" },
+    { text: "Administer diuretics", tag: "NCLEX" },
+    { text: "Restrict oral fluids", tag: "SAFE_DELAY" },
+    { text: "Place client in Trendelenburg position", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Volume replacement restores circulating blood volume.",
+    distractors: {
+      NCLEX: "Diuretics worsen hypovolemia.",
+      SAFE_DELAY: "Fluid restriction is contraindicated.",
+      STR: "Trendelenburg is no longer recommended."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client with burns covering 40% of total body surface area. What is the PRIORITY concern?",
+  options: [
+    { text: "Fluid and electrolyte imbalance", tag: "SCFHS" },
+    { text: "Pain control", tag: "NCLEX" },
+    { text: "Risk for infection", tag: "SAFE_DELAY" },
+    { text: "Body image disturbance", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Massive fluid loss occurs early after severe burns.",
+    distractors: {
+      NCLEX: "Pain is important but secondary.",
+      SAFE_DELAY: "Infection risk is later.",
+      STR: "Psychosocial issues are not immediate."
+    }
+  }
+},
+{
+  q: "A client with chronic kidney disease is prescribed furosemide. Which laboratory value should the nurse monitor MOST closely?",
+  options: [
+    { text: "Potassium level", tag: "SCFHS" },
+    { text: "Calcium level", tag: "NCLEX" },
+    { text: "Hemoglobin", tag: "SAFE_DELAY" },
+    { text: "White blood cell count", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Furosemide can cause potassium loss, leading to hypokalemia.",
+    distractors: {
+      NCLEX: "Calcium is less affected.",
+      SAFE_DELAY: "Hemoglobin reflects anemia, not diuretic effect.",
+      STR: "WBC count is unrelated."
+    }
+  }
+},
+{
+  q: "Which finding indicates EFFECTIVE treatment for a client with pneumonia?",
+  options: [
+    { text: "Decreased crackles on auscultation", tag: "SCFHS" },
+    { text: "Persistent productive cough", tag: "SAFE_DELAY" },
+    { text: "Elevated white blood cell count", tag: "NCLEX" },
+    { text: "Increased respiratory rate", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Improved breath sounds indicate resolution of infection.",
+    distractors: {
+      SAFE_DELAY: "Cough may persist initially.",
+      NCLEX: "Elevated WBC suggests infection.",
+      STR: "Increased RR indicates distress."
+    }
+  }
+},
+{
+  q: "The nurse is caring for a client with a chest tube. Which finding requires IMMEDIATE intervention?",
+  options: [
+    { text: "Sudden continuous bubbling in the water-seal chamber", tag: "SCFHS" },
+    { text: "Tidaling with respiration", tag: "NCLEX" },
+    { text: "Serous drainage in the collection chamber", tag: "SAFE_DELAY" },
+    { text: "Occlusive dressing at insertion site", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Continuous bubbling indicates an air leak.",
+    distractors: {
+      NCLEX: "Tidaling is expected.",
+      SAFE_DELAY: "Serous drainage is normal.",
+      STR: "Occlusive dressing is appropriate."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy has a neutrophil count of 800/mm³. Which intervention is MOST appropriate?",
+  options: [
+    { text: "Initiate neutropenic precautions", tag: "SCFHS" },
+    { text: "Encourage fresh fruits and vegetables", tag: "NCLEX" },
+    { text: "Allow unrestricted visitors", tag: "SAFE_DELAY" },
+    { text: "Administer live vaccines", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe neutropenia requires infection prevention measures.",
+    distractors: {
+      NCLEX: "Raw foods increase infection risk.",
+      SAFE_DELAY: "Visitors should be limited.",
+      STR: "Live vaccines are contraindicated."
+    }
+  }
+},
+{
+  q: "Which sign is MOST indicative of hypocalcemia?",
+  options: [
+    { text: "Positive Trousseau sign", tag: "SCFHS" },
+    { text: "Bounding pulses", tag: "NCLEX" },
+    { text: "Warm flushed skin", tag: "SAFE_DELAY" },
+    { text: "Bradycardia", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Trousseau sign reflects neuromuscular excitability from low calcium.",
+    distractors: {
+      NCLEX: "Bounding pulses suggest hypervolemia.",
+      SAFE_DELAY: "Flushed skin is unrelated.",
+      STR: "Bradycardia is not typical."
+    }
+  }
+},
+{
+  q: "A client with asthma is experiencing an acute attack. Which medication should the nurse administer FIRST?",
+  options: [
+    { text: "Short-acting bronchodilator", tag: "SCFHS" },
+    { text: "Inhaled corticosteroid", tag: "NCLEX" },
+    { text: "Leukotriene modifier", tag: "SAFE_DELAY" },
+    { text: "Antibiotic therapy", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid bronchodilation is required during acute asthma attacks.",
+    distractors: {
+      NCLEX: "Steroids are not immediate relief.",
+      SAFE_DELAY: "Leukotriene modifiers are preventive.",
+      STR: "Antibiotics are not indicated."
+    }
+  }
+},
+{
+  q: "Which nursing action is MOST appropriate when caring for a client with increased intracranial pressure?",
+  options: [
+    { text: "Elevate the head of the bed 30 degrees", tag: "SCFHS" },
+    { text: "Encourage frequent coughing", tag: "NCLEX" },
+    { text: "Place client in Trendelenburg position", tag: "SAFE_DELAY" },
+    { text: "Perform frequent suctioning", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Head elevation promotes venous drainage and lowers ICP.",
+    distractors: {
+      NCLEX: "Coughing increases ICP.",
+      SAFE_DELAY: "Trendelenburg worsens ICP.",
+      STR: "Suctioning increases pressure."
+    }
+  }
+},
+{
+  q: "The nurse is teaching a client about warfarin therapy. Which statement indicates understanding?",
+  options: [
+    { text: "I will have my INR checked regularly", tag: "SCFHS" },
+    { text: "I can take aspirin for pain", tag: "NCLEX" },
+    { text: "I should increase green leafy vegetables", tag: "SAFE_DELAY" },
+    { text: "I can stop the drug if I feel better", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "INR monitoring ensures therapeutic anticoagulation.",
+    distractors: {
+      NCLEX: "Aspirin increases bleeding risk.",
+      SAFE_DELAY: "Vitamin K reduces effectiveness.",
+      STR: "Medication should not be stopped abruptly."
+    }
+  }
+},
+{
+  q: "Which assessment finding suggests dehydration in an older adult client?",
+  options: [
+    { text: "Poor skin turgor", tag: "SCFHS" },
+    { text: "Bounding pulse", tag: "NCLEX" },
+    { text: "Crackles in lungs", tag: "SAFE_DELAY" },
+    { text: "Peripheral edema", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Decreased skin elasticity indicates fluid deficit.",
+    distractors: {
+      NCLEX: "Bounding pulse suggests excess volume.",
+      SAFE_DELAY: "Crackles indicate overload.",
+      STR: "Edema reflects fluid retention."
+    }
+  }
+},
+{
+  q: "A client suddenly becomes unresponsive and pulseless. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Begin cardiopulmonary resuscitation", tag: "SCFHS" },
+    { text: "Check blood pressure", tag: "NCLEX" },
+    { text: "Administer oxygen", tag: "SAFE_DELAY" },
+    { text: "Notify the physician", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate CPR is required in cardiac arrest.",
+    distractors: {
+      NCLEX: "BP assessment delays life-saving action.",
+      SAFE_DELAY: "Oxygen is secondary to circulation.",
+      STR: "Notification occurs after intervention."
+    }
+  }
+},
+{
+  q: "A client with type 1 diabetes reports sweating, tremors, and confusion. Which action should the nurse take FIRST?",
+  options: [
+    { text: "Administer a fast-acting carbohydrate", tag: "SCFHS" },
+    { text: "Check urine for ketones", tag: "NCLEX" },
+    { text: "Administer insulin as prescribed", tag: "SAFE_DELAY" },
+    { text: "Encourage physical activity", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptoms indicate hypoglycemia requiring immediate glucose administration.",
+    distractors: {
+      NCLEX: "Ketone testing is not priority during hypoglycemia.",
+      SAFE_DELAY: "Insulin worsens hypoglycemia.",
+      STR: "Activity further lowers blood glucose."
+    }
+  }
+},
+{
+  q: "Which intervention is MOST appropriate for preventing aspiration in a client receiving enteral tube feedings?",
+  options: [
+    { text: "Maintain head of bed elevation at 30–45 degrees", tag: "SCFHS" },
+    { text: "Check residuals once daily", tag: "SAFE_DELAY" },
+    { text: "Administer feedings rapidly", tag: "NCLEX" },
+    { text: "Place the client in supine position", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Head elevation reduces risk of gastric content aspiration.",
+    distractors: {
+      SAFE_DELAY: "Residuals require regular monitoring.",
+      NCLEX: "Rapid feeding increases aspiration risk.",
+      STR: "Supine positioning promotes aspiration."
+    }
+  }
+},
+{
+  q: "A client with heart failure reports sudden weight gain and increased dyspnea. What is the nurse’s PRIORITY assessment?",
+  options: [
+    { text: "Assess lung sounds for crackles", tag: "SCFHS" },
+    { text: "Evaluate dietary sodium intake", tag: "SAFE_DELAY" },
+    { text: "Check peripheral pulses", tag: "NCLEX" },
+    { text: "Assess bowel sounds", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Crackles indicate pulmonary congestion and fluid overload.",
+    distractors: {
+      SAFE_DELAY: "Diet history is secondary.",
+      NCLEX: "Pulses are not priority.",
+      STR: "Bowel sounds are unrelated."
+    }
+  }
+},
+{
+  q: "Which finding suggests a complication of prolonged immobility?",
+  options: [
+    { text: "Development of pressure injuries", tag: "SCFHS" },
+    { text: "Improved muscle tone", tag: "SAFE_DELAY" },
+    { text: "Increased bone density", tag: "NCLEX" },
+    { text: "Enhanced circulation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immobility leads to skin breakdown and pressure injuries.",
+    distractors: {
+      SAFE_DELAY: "Muscle tone decreases.",
+      NCLEX: "Bone density decreases.",
+      STR: "Circulation is reduced."
+    }
+  }
+},
+{
+  q: "A client is receiving a blood transfusion and develops chills and fever. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Stop the transfusion immediately", tag: "SCFHS" },
+    { text: "Slow the infusion rate", tag: "SAFE_DELAY" },
+    { text: "Administer antipyretics", tag: "NCLEX" },
+    { text: "Document the findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs of transfusion reaction require immediate cessation.",
+    distractors: {
+      SAFE_DELAY: "Slowing does not prevent reaction.",
+      NCLEX: "Medication follows stopping transfusion.",
+      STR: "Documentation is not the first action."
+    }
+  }
+},
+{
+  q: "Which nursing intervention BEST promotes effective airway clearance?",
+  options: [
+    { text: "Encourage deep breathing and coughing", tag: "SCFHS" },
+    { text: "Limit fluid intake", tag: "SAFE_DELAY" },
+    { text: "Maintain bed rest", tag: "NCLEX" },
+    { text: "Administer sedatives", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Coughing mobilizes secretions and clears airway.",
+    distractors: {
+      SAFE_DELAY: "Fluids help thin secretions.",
+      NCLEX: "Activity aids clearance.",
+      STR: "Sedatives suppress cough reflex."
+    }
+  }
+},
+{
+  q: "A postoperative client reports severe pain unrelieved by medication. What should the nurse do NEXT?",
+  options: [
+    { text: "Reassess pain characteristics and location", tag: "SCFHS" },
+    { text: "Withhold further analgesics", tag: "SAFE_DELAY" },
+    { text: "Assume normal postoperative pain", tag: "NCLEX" },
+    { text: "Encourage the client to tolerate pain", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Unrelieved pain requires reassessment for complications.",
+    distractors: {
+      SAFE_DELAY: "Withholding medication is inappropriate.",
+      NCLEX: "Assumptions delay care.",
+      STR: "Pain management is a priority."
+    }
+  }
+},
+{
+  q: "Which assessment finding indicates hypovolemia?",
+  options: [
+    { text: "Decreased blood pressure", tag: "SCFHS" },
+    { text: "Bounding pulse", tag: "SAFE_DELAY" },
+    { text: "Crackles in lungs", tag: "NCLEX" },
+    { text: "Jugular vein distention", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Low blood pressure reflects reduced circulating volume.",
+    distractors: {
+      SAFE_DELAY: "Bounding pulse suggests overload.",
+      NCLEX: "Crackles indicate fluid excess.",
+      STR: "JVD suggests hypervolemia."
+    }
+  }
+},
+{
+  q: "A client with chronic obstructive pulmonary disease is receiving oxygen therapy. Which action is MOST appropriate?",
+  options: [
+    { text: "Administer oxygen at the lowest effective flow rate", tag: "SCFHS" },
+    { text: "Maintain oxygen saturation at 100%", tag: "SAFE_DELAY" },
+    { text: "Discontinue oxygen during sleep", tag: "NCLEX" },
+    { text: "Encourage rapid deep breathing", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "COPD clients require cautious oxygen administration.",
+    distractors: {
+      SAFE_DELAY: "High saturation may suppress respiratory drive.",
+      NCLEX: "Oxygen is often needed during sleep.",
+      STR: "Rapid breathing increases air trapping."
+    }
+  }
+},
+{
+  q: "Which intervention is MOST effective in preventing falls in hospitalized older adults?",
+  options: [
+    { text: "Frequent rounding and call light within reach", tag: "SCFHS" },
+    { text: "Use of physical restraints", tag: "SAFE_DELAY" },
+    { text: "Dim lighting at night", tag: "NCLEX" },
+    { text: "Encouraging independent ambulation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Proactive rounding reduces unsupervised mobility.",
+    distractors: {
+      SAFE_DELAY: "Restraints increase injury risk.",
+      NCLEX: "Poor lighting increases falls.",
+      STR: "Unassisted ambulation increases risk."
+    }
+  }
+},
+{
+  q: "A client with asthma is experiencing wheezing and shortness of breath after exposure to an allergen. What is the nurse’s PRIORITY intervention?",
+  options: [
+    { text: "Administer a short-acting bronchodilator", tag: "SCFHS" },
+    { text: "Provide supplemental oxygen", tag: "SAFE_DELAY" },
+    { text: "Encourage pursed-lip breathing", tag: "NCLEX" },
+    { text: "Obtain a chest x-ray", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Bronchodilators rapidly relieve airway constriction.",
+    distractors: {
+      SAFE_DELAY: "Oxygen does not relieve bronchospasm.",
+      NCLEX: "Breathing techniques are adjunctive.",
+      STR: "Imaging is not the priority."
+    }
+  }
+},
+{
+  q: "Which finding indicates effective pain management in a postoperative client?",
+  options: [
+    { text: "Client reports pain level of 2 on a 0–10 scale", tag: "SCFHS" },
+    { text: "Client sleeps continuously", tag: "SAFE_DELAY" },
+    { text: "Vital signs remain elevated", tag: "NCLEX" },
+    { text: "Client avoids movement", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Patient self-report is the most reliable pain indicator.",
+    distractors: {
+      SAFE_DELAY: "Sleep alone does not indicate pain control.",
+      NCLEX: "Elevated vitals suggest pain.",
+      STR: "Avoidance indicates inadequate control."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy has a white blood cell count of 1,200/mm³. Which action should the nurse implement?",
+  options: [
+    { text: "Initiate neutropenic precautions", tag: "SCFHS" },
+    { text: "Encourage raw fruits and vegetables", tag: "SAFE_DELAY" },
+    { text: "Assign a shared room", tag: "NCLEX" },
+    { text: "Limit hand hygiene", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe neutropenia increases infection risk.",
+    distractors: {
+      SAFE_DELAY: "Raw foods harbor bacteria.",
+      NCLEX: "Room sharing increases exposure.",
+      STR: "Hand hygiene is essential."
+    }
+  }
+},
+{
+  q: "Which assessment finding suggests fluid volume overload?",
+  options: [
+    { text: "Jugular vein distention", tag: "SCFHS" },
+    { text: "Dry mucous membranes", tag: "SAFE_DELAY" },
+    { text: "Poor skin turgor", tag: "NCLEX" },
+    { text: "Decreased urine output", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "JVD reflects increased circulating volume.",
+    distractors: {
+      SAFE_DELAY: "Dry mucosa indicates dehydration.",
+      NCLEX: "Poor turgor suggests deficit.",
+      STR: "Oliguria reflects hypovolemia."
+    }
+  }
+},
+{
+  q: "A client reports chest pain radiating to the left arm. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess vital signs and oxygen saturation", tag: "SCFHS" },
+    { text: "Administer prescribed analgesics", tag: "SAFE_DELAY" },
+    { text: "Encourage the client to rest", tag: "NCLEX" },
+    { text: "Document the complaint", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment identifies life-threatening instability.",
+    distractors: {
+      SAFE_DELAY: "Medication follows assessment.",
+      NCLEX: "Rest does not address cause.",
+      STR: "Documentation is not priority."
+    }
+  }
+},
+{
+  q: "Which nursing intervention is MOST appropriate for a client with dysphagia?",
+  options: [
+    { text: "Provide thickened liquids", tag: "SCFHS" },
+    { text: "Encourage rapid eating", tag: "SAFE_DELAY" },
+    { text: "Position client supine during meals", tag: "NCLEX" },
+    { text: "Limit swallowing attempts", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Thickened liquids reduce aspiration risk.",
+    distractors: {
+      SAFE_DELAY: "Rapid eating increases choking risk.",
+      NCLEX: "Supine position promotes aspiration.",
+      STR: "Avoidance worsens nutrition."
+    }
+  }
+},
+{
+  q: "Which sign indicates early infection in a surgical wound?",
+  options: [
+    { text: "Localized redness and warmth", tag: "SCFHS" },
+    { text: "Purulent drainage", tag: "SAFE_DELAY" },
+    { text: "Wound dehiscence", tag: "NCLEX" },
+    { text: "Systemic hypotension", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Inflammation is an early sign of infection.",
+    distractors: {
+      SAFE_DELAY: "Purulence is a later sign.",
+      NCLEX: "Dehiscence is a complication.",
+      STR: "Hypotension suggests sepsis."
+    }
+  }
+},
+{
+  q: "A client with diabetes is scheduled for surgery. Which action should the nurse take on the morning of surgery?",
+  options: [
+    { text: "Check blood glucose level", tag: "SCFHS" },
+    { text: "Administer full insulin dose", tag: "SAFE_DELAY" },
+    { text: "Provide breakfast", tag: "NCLEX" },
+    { text: "Delay assessment", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Glucose monitoring guides perioperative management.",
+    distractors: {
+      SAFE_DELAY: "Insulin dosing may require adjustment.",
+      NCLEX: "Clients are NPO.",
+      STR: "Assessment must not be delayed."
+    }
+  }
+},
+{
+  q: "Which finding suggests effective oxygenation?",
+  options: [
+    { text: "Oxygen saturation of 96%", tag: "SCFHS" },
+    { text: "Use of accessory muscles", tag: "SAFE_DELAY" },
+    { text: "Restlessness", tag: "NCLEX" },
+    { text: "Cyanotic lips", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Normal saturation indicates adequate oxygen delivery.",
+    distractors: {
+      SAFE_DELAY: "Accessory muscles indicate distress.",
+      NCLEX: "Restlessness suggests hypoxia.",
+      STR: "Cyanosis indicates poor oxygenation."
+    }
+  }
+},
+{
+  q: "Which intervention BEST prevents pressure injuries?",
+  options: [
+    { text: "Reposition the client every 2 hours", tag: "SCFHS" },
+    { text: "Massage bony prominences", tag: "SAFE_DELAY" },
+    { text: "Limit mobility", tag: "NCLEX" },
+    { text: "Reduce protein intake", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Regular repositioning relieves pressure.",
+    distractors: {
+      SAFE_DELAY: "Massage damages tissue.",
+      NCLEX: "Immobility increases risk.",
+      STR: "Protein supports skin integrity."
+    }
+  }
+},
+{
+  q: "A client with asthma is experiencing wheezing and shortness of breath after exposure to an allergen. What is the nurse’s PRIORITY intervention?",
+  options: [
+    { text: "Administer a short-acting bronchodilator", tag: "SCFHS" },
+    { text: "Provide supplemental oxygen", tag: "SAFE_DELAY" },
+    { text: "Encourage pursed-lip breathing", tag: "NCLEX" },
+    { text: "Obtain a chest x-ray", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Bronchodilators rapidly relieve airway constriction.",
+    distractors: {
+      SAFE_DELAY: "Oxygen does not relieve bronchospasm.",
+      NCLEX: "Breathing techniques are adjunctive.",
+      STR: "Imaging is not the priority."
+    }
+  }
+},
+{
+  q: "Which finding indicates effective pain management in a postoperative client?",
+  options: [
+    { text: "Client reports pain level of 2 on a 0–10 scale", tag: "SCFHS" },
+    { text: "Client sleeps continuously", tag: "SAFE_DELAY" },
+    { text: "Vital signs remain elevated", tag: "NCLEX" },
+    { text: "Client avoids movement", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Patient self-report is the most reliable pain indicator.",
+    distractors: {
+      SAFE_DELAY: "Sleep alone does not indicate pain control.",
+      NCLEX: "Elevated vitals suggest pain.",
+      STR: "Avoidance indicates inadequate control."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy has a white blood cell count of 1,200/mm³. Which action should the nurse implement?",
+  options: [
+    { text: "Initiate neutropenic precautions", tag: "SCFHS" },
+    { text: "Encourage raw fruits and vegetables", tag: "SAFE_DELAY" },
+    { text: "Assign a shared room", tag: "NCLEX" },
+    { text: "Limit hand hygiene", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe neutropenia increases infection risk.",
+    distractors: {
+      SAFE_DELAY: "Raw foods harbor bacteria.",
+      NCLEX: "Room sharing increases exposure.",
+      STR: "Hand hygiene is essential."
+    }
+  }
+},
+{
+  q: "Which assessment finding suggests fluid volume overload?",
+  options: [
+    { text: "Jugular vein distention", tag: "SCFHS" },
+    { text: "Dry mucous membranes", tag: "SAFE_DELAY" },
+    { text: "Poor skin turgor", tag: "NCLEX" },
+    { text: "Decreased urine output", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "JVD reflects increased circulating volume.",
+    distractors: {
+      SAFE_DELAY: "Dry mucosa indicates dehydration.",
+      NCLEX: "Poor turgor suggests deficit.",
+      STR: "Oliguria reflects hypovolemia."
+    }
+  }
+},
+{
+  q: "A client reports chest pain radiating to the left arm. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess vital signs and oxygen saturation", tag: "SCFHS" },
+    { text: "Administer prescribed analgesics", tag: "SAFE_DELAY" },
+    { text: "Encourage the client to rest", tag: "NCLEX" },
+    { text: "Document the complaint", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment identifies life-threatening instability.",
+    distractors: {
+      SAFE_DELAY: "Medication follows assessment.",
+      NCLEX: "Rest does not address cause.",
+      STR: "Documentation is not priority."
+    }
+  }
+},
+{
+  q: "Which nursing intervention is MOST appropriate for a client with dysphagia?",
+  options: [
+    { text: "Provide thickened liquids", tag: "SCFHS" },
+    { text: "Encourage rapid eating", tag: "SAFE_DELAY" },
+    { text: "Position client supine during meals", tag: "NCLEX" },
+    { text: "Limit swallowing attempts", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Thickened liquids reduce aspiration risk.",
+    distractors: {
+      SAFE_DELAY: "Rapid eating increases choking risk.",
+      NCLEX: "Supine position promotes aspiration.",
+      STR: "Avoidance worsens nutrition."
+    }
+  }
+},
+{
+  q: "Which sign indicates early infection in a surgical wound?",
+  options: [
+    { text: "Localized redness and warmth", tag: "SCFHS" },
+    { text: "Purulent drainage", tag: "SAFE_DELAY" },
+    { text: "Wound dehiscence", tag: "NCLEX" },
+    { text: "Systemic hypotension", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Inflammation is an early sign of infection.",
+    distractors: {
+      SAFE_DELAY: "Purulence is a later sign.",
+      NCLEX: "Dehiscence is a complication.",
+      STR: "Hypotension suggests sepsis."
+    }
+  }
+},
+{
+  q: "A client with diabetes is scheduled for surgery. Which action should the nurse take on the morning of surgery?",
+  options: [
+    { text: "Check blood glucose level", tag: "SCFHS" },
+    { text: "Administer full insulin dose", tag: "SAFE_DELAY" },
+    { text: "Provide breakfast", tag: "NCLEX" },
+    { text: "Delay assessment", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Glucose monitoring guides perioperative management.",
+    distractors: {
+      SAFE_DELAY: "Insulin dosing may require adjustment.",
+      NCLEX: "Clients are NPO.",
+      STR: "Assessment must not be delayed."
+    }
+  }
+},
+{
+  q: "Which finding suggests effective oxygenation?",
+  options: [
+    { text: "Oxygen saturation of 96%", tag: "SCFHS" },
+    { text: "Use of accessory muscles", tag: "SAFE_DELAY" },
+    { text: "Restlessness", tag: "NCLEX" },
+    { text: "Cyanotic lips", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Normal saturation indicates adequate oxygen delivery.",
+    distractors: {
+      SAFE_DELAY: "Accessory muscles indicate distress.",
+      NCLEX: "Restlessness suggests hypoxia.",
+      STR: "Cyanosis indicates poor oxygenation."
+    }
+  }
+},
+{
+  q: "Which intervention BEST prevents pressure injuries?",
+  options: [
+    { text: "Reposition the client every 2 hours", tag: "SCFHS" },
+    { text: "Massage bony prominences", tag: "SAFE_DELAY" },
+    { text: "Limit mobility", tag: "NCLEX" },
+    { text: "Reduce protein intake", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Regular repositioning relieves pressure.",
+    distractors: {
+      SAFE_DELAY: "Massage damages tissue.",
+      NCLEX: "Immobility increases risk.",
+      STR: "Protein supports skin integrity."
+    }
+  }
+},
+{
   q: "A client with suspected stroke arrives at the emergency department within 1 hour of symptom onset. What is the nurse’s PRIORITY action?",
   options: [
     { text: "Assess airway, breathing, and circulation", tag: "SCFHS" },
@@ -441,186 +1521,23 @@ const questions = [
   }
 },
 {
-  q: "Which of the following instruction should be given to the parents about colostomy care?",
+  q: "Which nursing intervention BEST promotes sleep in hospitalized clients?",
   options: [
-    { text: "Avoid tight diapers around the infant abdomen", tag: "SCFHS" },
-    { text: "Use baby powder after stoma cleaning", tag: "SAFE_DELAY" },
-    { text: "Empty the pouch when it is completely full", tag: "NCLEX" },
-    { text: "Use baby wipes to clean the skin around the stoma", tag: "STR" }
+    { text: "Cluster nursing care activities", tag: "SCFHS" },
+    { text: "Keep lights on overnight", tag: "SAFE_DELAY" },
+    { text: "Perform frequent vital sign checks", tag: "NCLEX" },
+    { text: "Encourage daytime napping", tag: "STR" }
   ],
   correctTag: "SCFHS",
   rationale: {
-    correct: "Tight diapers increase pressure and skin breakdown around the stoma.",
+    correct: "Clustering care minimizes sleep interruptions.",
     distractors: {
-      SAFE_DELAY: "Powder can irritate and interfere with adhesion.",
-      NCLEX: "Pouch should be emptied before it becomes full.",
-      STR: "Baby wipes may contain irritants."
+      SAFE_DELAY: "Lighting disrupts sleep.",
+      NCLEX: "Frequent checks interrupt rest.",
+      STR: "Daytime napping affects nighttime sleep."
     }
   }
-},
-{
-  q: "A 23-year-old gravid 1, para 0 mother is presented to the Antenatal clinic. Which information regarding fetal circulation should be stressed?",
-  options: [
-    { text: "Two umbilical arteries and one umbilical vein", tag: "SCFHS" },
-    { text: "One umbilical artery and one umbilical vein", tag: "SAFE_DELAY" },
-    { text: "One umbilical artery and two umbilical veins", tag: "NCLEX" },
-    { text: "Two umbilical arteries and two umbilical veins", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Normal fetal circulation includes two arteries and one vein.",
-    distractors: {
-      SAFE_DELAY: "This is anatomically incorrect.",
-      NCLEX: "Only one umbilical vein exists.",
-      STR: "There are not two umbilical veins."
-    }
-  }
-},
-{
-  q: "During a meningitis outbreak, non-immune staff were given immunoglobulin to prevent infection. What type of immunity develops?",
-  options: [
-    { text: "Passive", tag: "SCFHS" },
-    { text: "Active", tag: "SAFE_DELAY" },
-    { text: "Natural", tag: "NCLEX" },
-    { text: "Long-term", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Immunoglobulin provides immediate passive immunity.",
-    distractors: {
-      SAFE_DELAY: "Active immunity requires antigen exposure.",
-      NCLEX: "Natural immunity occurs through infection.",
-      STR: "Passive immunity is temporary."
-    }
-  }
-},
-{
-  q: "Immunization is considered an example of which level of prevention?",
-  options: [
-    { text: "Primary prevention", tag: "SCFHS" },
-    { text: "Secondary prevention", tag: "SAFE_DELAY" },
-    { text: "Tertiary prevention", tag: "NCLEX" },
-    { text: "Treatment", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Immunization prevents disease before it occurs.",
-    distractors: {
-      SAFE_DELAY: "Secondary focuses on early detection.",
-      NCLEX: "Tertiary reduces complications.",
-      STR: "Treatment manages existing disease."
-    }
-  }
-},
-{
-  q: "The nurse is caring for a client who states, “I don’t want to talk with you because you’re only the nurse.” Which response is most appropriate?",
-  options: [
-    { text: "So then, you would prefer to speak with your primary health care provider?", tag: "SCFHS" },
-    { text: "I’m saddened by the way you dismissed me", tag: "SAFE_DELAY" },
-    { text: "Your provider directs me in your care", tag: "NCLEX" },
-    { text: "I understand, I will leave now", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "This response is respectful and therapeutic.",
-    distractors: {
-      SAFE_DELAY: "This expresses personal feelings.",
-      NCLEX: "This may sound defensive.",
-      STR: "Abandonment is not appropriate."
-    }
-  }
-},
-{
-  q: "According to pressure ulcer staging, skin with blisters, shallow open ulcers, and abrasions is classified as which stage?",
-  options: [
-    { text: "Stage 2", tag: "SCFHS" },
-    { text: "Stage 1", tag: "SAFE_DELAY" },
-    { text: "Stage 3", tag: "NCLEX" },
-    { text: "Stage 4", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Stage 2 involves partial-thickness skin loss.",
-    distractors: {
-      SAFE_DELAY: "Stage 1 has intact skin.",
-      NCLEX: "Stage 3 extends into subcutaneous tissue.",
-      STR: "Stage 4 exposes muscle or bone."
-    }
-  }
-},
-{
-  q: "A pulse oximeter probe attached to the forefinger is not reading. What is the nurse’s best action?",
-  options: [
-    { text: "Change the location of the pulse oximeter", tag: "SCFHS" },
-    { text: "Assume oxygen saturation is normal", tag: "SAFE_DELAY" },
-    { text: "Maintain position and recheck later", tag: "NCLEX" },
-    { text: "Remove oxygen therapy", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Poor perfusion may affect readings; repositioning helps.",
-    distractors: {
-      SAFE_DELAY: "Never assume normal values.",
-      NCLEX: "Delay risks missing hypoxia.",
-      STR: "Oxygen should not be stopped."
-    }
-  }
-},
-{
-  q: "Which nursing intervention is appropriate during the pre-operative phase?",
-  options: [
-    { text: "Verify patient understanding of informed consent", tag: "SCFHS" },
-    { text: "Obtain informed consent", tag: "SAFE_DELAY" },
-    { text: "Encourage patient to sign consent", tag: "NCLEX" },
-    { text: "Explain surgery without provider involvement", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "The nurse verifies understanding, not obtains consent.",
-    distractors: {
-      SAFE_DELAY: "Only providers obtain consent.",
-      NCLEX: "Forcing signature is inappropriate.",
-      STR: "Provider explains surgery details."
-    }
-  }
-},
-{
-  q: "A patient is in the triage area. What is the FIRST subjective data the nurse should obtain?",
-  options: [
-    { text: "Chief complaint", tag: "SCFHS" },
-    { text: "Family history", tag: "SAFE_DELAY" },
-    { text: "Medical history", tag: "NCLEX" },
-    { text: "Pain scale history", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Chief complaint determines triage priority.",
-    distractors: {
-      SAFE_DELAY: "Family history is not immediate.",
-      NCLEX: "Full history follows stabilization.",
-      STR: "Pain assessment follows complaint."
-    }
-  }
-},
-{
-  q: "On the fourth post-operative day after cesarean section, a positive Homans’ sign indicates pain in which area?",
-  options: [
-    { text: "Calf", tag: "SCFHS" },
-    { text: "Heel", tag: "SAFE_DELAY" },
-    { text: "Thigh", tag: "NCLEX" },
-    { text: "Foot", tag: "STR" }
-  ],
-  correctTag: "SCFHS",
-  rationale: {
-    correct: "Calf pain suggests deep vein thrombosis.",
-    distractors: {
-      SAFE_DELAY: "Heel pain is unrelated.",
-      NCLEX: "Thigh pain is less specific.",
-      STR: "Foot pain is not indicative."
-    }
-  }
-},
-
+}
 ];
 
 // ================= ENGINE =================
@@ -631,7 +1548,7 @@ let selectedIndex = null;
 let score = { SCFHS:0, NCLEX:0, STR:0, SAFE_DELAY:0 };
 
 // ================= TIMER =================
-let totalTime = 20 * 60; // 20 minutes
+let totalTime = 120 * 60; // 120 minutes
 let timeLeft = totalTime;
 let timerInterval = null;
 
